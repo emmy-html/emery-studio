@@ -1,0 +1,71 @@
+@mixin dyke-gradient {
+    padding-bottom:10px;
+    background: /* gradient can be an image */
+      linear-gradient(
+        to right, 
+        $rgba-brown 0%,
+        $rgba-orange 22%,
+        $rgba-light-orange 47%,
+        $rgba-light-pink 67%,
+        $rgba-dark-pink 100%
+      )
+      left 
+      bottom
+      $light-brown    
+      no-repeat; 
+    background-size: 200px 7px ;/* if linear-gradient, we need to resize it */
+    background-position: bottom center;
+}
+@mixin dyke-gradient-border {
+  background: /* gradient can be an image */
+    linear-gradient(
+      to bottom, 
+      $rgba-brown 0%,
+      $rgba-orange 22%,
+      $rgba-light-orange 47%,
+      $rgba-light-pink 67%,
+      $rgba-dark-pink 100%
+    )
+    left 
+    bottom
+    $light-brown    
+    no-repeat; 
+}
+@mixin page-header {
+    h1 {
+      border-bottom: 3px solid $light-orange;
+      color: $light-pink;
+      margin-bottom: 20px;
+      text-transform: lowercase;
+      text-align: center;
+  }
+}
+@mixin block-links {
+  a:link,
+  a:visited {
+      color: $brown;
+      display: block;
+      margin-bottom: 10px;
+      padding: 10px;
+      &:nth-of-type(even) {
+          background: $light-orange;
+          border-bottom: 3px solid $light-orange;
+          &:hover {
+              background: none;
+          }
+      }
+      &:nth-of-type(odd) {
+          background: $light-pink;
+          border-bottom: 3px solid $light-pink;
+          &:hover {
+              background: none;
+              border-bottom: 3px solid $light-pink;
+          }
+      }
+      &:hover {
+          color: #fff;
+          transition: .5s background-color !important;
+          transition: .1s color;
+      }
+  }
+}
