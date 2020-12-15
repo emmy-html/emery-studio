@@ -443,27 +443,41 @@ footer {
 /* large screens */
 @media screen and (min-width: 768px) {
   header .content-wrapper ul li {
-    display: inline-block;
-    margin-left: 15px;
-    padding: 10px; }
-    header .content-wrapper ul li:nth-of-type(even) {
-      background: #A0D2DB;
-      border-bottom: 3px solid #A0D2DB; }
-      header .content-wrapper ul li:nth-of-type(even):hover {
-        background: none; }
-    header .content-wrapper ul li:nth-of-type(odd) {
-      background: #C490D1;
-      border-bottom: 3px solid #C490D1; }
-      header .content-wrapper ul li:nth-of-type(odd):hover {
-        background: none; }
-    header .content-wrapper ul li:hover {
-      transition: .3s background-color; }
+    display: inline-block !important; }
     header .content-wrapper ul li a:link,
     header .content-wrapper ul li a:visited {
-      color: #08080D; }
+      color: #08080D;
+      display: block;
+      margin-bottom: 10px;
+      padding: 10px; }
+      header .content-wrapper ul li a:link:nth-of-type(even),
+      header .content-wrapper ul li a:visited:nth-of-type(even) {
+        background: #A0D2DB;
+        border-bottom: 3px solid #A0D2DB; }
+        header .content-wrapper ul li a:link:nth-of-type(even):hover,
+        header .content-wrapper ul li a:visited:nth-of-type(even):hover {
+          background: none; }
+      header .content-wrapper ul li a:link:nth-of-type(odd),
+      header .content-wrapper ul li a:visited:nth-of-type(odd) {
+        background: #C490D1;
+        border-bottom: 3px solid #C490D1; }
+        header .content-wrapper ul li a:link:nth-of-type(odd):hover,
+        header .content-wrapper ul li a:visited:nth-of-type(odd):hover {
+          background: none;
+          border-bottom: 3px solid #C490D1; }
       header .content-wrapper ul li a:link:hover,
       header .content-wrapper ul li a:visited:hover {
-        color: #fff; }
+        color: #fff;
+        transition: .5s background-color !important;
+        transition: .1s color; }
+    header .content-wrapper ul li:nth-of-type(even) a:link,
+    header .content-wrapper ul li:nth-of-type(even) a:visited {
+      background: #A0D2DB !important;
+      border-bottom: 3px solid #A0D2DB; }
+      header .content-wrapper ul li:nth-of-type(even) a:link:hover,
+      header .content-wrapper ul li:nth-of-type(even) a:visited:hover {
+        background: none !important;
+        border-bottom: 3px solid #A0D2DB; }
 
   main #hero {
     padding: 30px 0px; }

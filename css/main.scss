@@ -462,32 +462,18 @@
           .content-wrapper {
               ul {
                   li {
-                      display: inline-block;
-                      margin-left: 15px;
-                      padding: 10px;
+                      @include block-links;
+                      display: inline-block !important;
                       &:nth-of-type(even) {
-                          background: $light-blue;
+                        a:link,
+                        a:visited {
+                          background: $light-blue !important;
                           border-bottom: 3px solid $light-blue;
                           &:hover {
-                              background: none;
+                              background: none !important;
+                              border-bottom: 3px solid $light-blue;
                           }
-                      }
-                      &:nth-of-type(odd) {
-                          background: $light-purple;
-                          border-bottom: 3px solid $light-purple;
-                          &:hover {
-                              background: none;
-                          }
-                      }
-                      &:hover {
-                          transition: .3s background-color;
-                      }
-                      a:link,
-                      a:visited {
-                          color: $black;
-                          &:hover {
-                              color: #fff;
-                          }
+                        }
                       }
                   }
               }
