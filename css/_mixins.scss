@@ -1,6 +1,6 @@
 @mixin emery-gradient {
     padding-bottom:10px;
-    background: /* gradient can be an image */
+    background:
       linear-gradient(
         to right, 
         $rgba-light-blue 0%,
@@ -11,11 +11,11 @@
       bottom
       $black    
       no-repeat; 
-    background-size: 200px 7px ;/* if linear-gradient, we need to resize it */
+    background-size: 200px 7px ;
     background-position: bottom center;
 }
 @mixin emery-gradient-border {
-  background: /* gradient can be an image */
+  background:
     linear-gradient(
       to bottom, 
       $rgba-light-blue 0%,
@@ -39,23 +39,24 @@
 @mixin block-links {
   a:link,
   a:visited {
+      border-radius: 5px;
       color: $black;
       display: block;
       margin-bottom: 10px;
       padding: 10px;
       &:nth-of-type(even) {
           background: $light-blue;
-          border-bottom: 3px solid $light-blue;
+          border-bottom: 5px solid $light-blue;
           &:hover {
               background: none;
           }
       }
       &:nth-of-type(odd) {
           background: $light-purple;
-          border-bottom: 3px solid $light-purple;
+          border-bottom: 5px solid $light-purple;
           &:hover {
               background: none;
-              border-bottom: 3px solid $light-purple;
+              border-bottom: 5px solid $light-purple;
           }
       }
       &:hover {
