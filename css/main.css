@@ -109,7 +109,8 @@ header .content-wrapper {
       transition: .3s color; }
   header .content-wrapper ul li {
     list-style-type: none;
-    text-transform: lowercase; }
+    text-transform: lowercase;
+    margin-left: 20px; }
     header .content-wrapper ul li a:link,
     header .content-wrapper ul li a:visited {
       color: #fff; }
@@ -184,9 +185,11 @@ header .content-wrapper {
       width: 140px;
       height: 20px; }
     #hub-selection .content-wrapper #hub-one #hub-description, #hub-selection .content-wrapper #hub-two #hub-description, #hub-selection .content-wrapper #hub-three #hub-description {
-      font-size: .80rem;
-      line-height: .80rem;
-      padding-bottom: 10px; }
+      font-size: 1rem;
+      line-height: 1rem;
+      padding-bottom: 15px;
+      text-align: center;
+      width: 250px; }
     #hub-selection .content-wrapper #hub-one .portfolio-link, #hub-selection .content-wrapper #hub-two .portfolio-link, #hub-selection .content-wrapper #hub-three .portfolio-link {
       background: none;
       border-bottom: 3px solid #C490D1 !important;
@@ -199,6 +202,38 @@ header .content-wrapper {
       #hub-selection .content-wrapper #hub-one .portfolio-link:hover, #hub-selection .content-wrapper #hub-two .portfolio-link:hover, #hub-selection .content-wrapper #hub-three .portfolio-link:hover {
         color: #A0D2DB;
         transition: .3s color !important; }
+    @media screen and (min-width: 768px) {
+      #hub-selection .content-wrapper #hub-one a:link,
+      #hub-selection .content-wrapper #hub-one a:visited, #hub-selection .content-wrapper #hub-two a:link,
+      #hub-selection .content-wrapper #hub-two a:visited, #hub-selection .content-wrapper #hub-three a:link,
+      #hub-selection .content-wrapper #hub-three a:visited {
+        font-size: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+        height: 100px;
+        margin-top: 20px; }
+      #hub-selection .content-wrapper #hub-one #hub-description, #hub-selection .content-wrapper #hub-two #hub-description, #hub-selection .content-wrapper #hub-three #hub-description {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        opacity: 0;
+        padding: 20px 0px;
+        width: 330px; }
+      #hub-selection .content-wrapper #hub-one:hover #hub-description, #hub-selection .content-wrapper #hub-two:hover #hub-description, #hub-selection .content-wrapper #hub-three:hover #hub-description {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        opacity: 1;
+        transition: .3s opacity; }
+      #hub-selection .content-wrapper #hub-one:not(:hover) #hub-description, #hub-selection .content-wrapper #hub-two:not(:hover) #hub-description, #hub-selection .content-wrapper #hub-three:not(:hover) #hub-description {
+        transition: .3s opacity; }
+      #hub-selection .content-wrapper #hub-one .portfolio-link, #hub-selection .content-wrapper #hub-two .portfolio-link, #hub-selection .content-wrapper #hub-three .portfolio-link {
+        display: inline-block !important;
+        font-size: 1.5rem !important;
+        line-height: 1.5rem !important;
+        width: 100px !important;
+        height: 30px !important;
+        padding: 0px !important; } }
 
 /* blog */
 #main-content {
@@ -550,6 +585,16 @@ footer {
       header .content-wrapper ul li:nth-of-type(even) a:visited:hover {
         background: none !important;
         border-bottom: 3px solid #A0D2DB; }
+
+  /* home page and hub selection */
+  #hub-selection .content-wrapper .hub-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    max-width: 75%;
+    min-width: 65%;
+    margin: 0 auto; }
 
   main #hero {
     padding: 30px 0px; }

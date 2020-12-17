@@ -76,9 +76,11 @@
     height: 20px;
   }
   #hub-description {
-    font-size: .80rem;
-    line-height: .80rem;
-    padding-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 250px;
   }
   .portfolio-link {
     background: none;
@@ -92,6 +94,46 @@
     &:hover {
       color: $light-blue;
       transition: .3s color !important;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    a:link,
+    a:visited {
+      font-size: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 350px;
+      height: 100px;
+      margin-top: 20px;
+    }
+    #hub-description {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      opacity: 0;
+      padding: 20px 0px;
+      width: 330px;
+    }
+    &:hover {
+      #hub-description {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        opacity: 1;
+        transition: .3s opacity;
+      }
+    }
+    &:not(:hover) {
+      #hub-description {
+        transition: .3s opacity;
+      }
+    }
+    .portfolio-link {
+      display: inline-block !important;
+      font-size: 1.5rem !important;
+      line-height: 1.5rem !important;
+      width: 100px !important;
+      height: 30px !important;
+      padding: 0px !important;
     }
   }
 }
