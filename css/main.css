@@ -133,56 +133,72 @@ header .content-wrapper {
       color: #C490D1; }
 
 /* hub selection */
-#hub-selection .content-wrapper a:link,
-#hub-selection .content-wrapper a:visited {
-  border-radius: 5px;
-  color: #08080D;
-  display: block;
-  margin-bottom: 10px;
-  padding: 10px; }
-  #hub-selection .content-wrapper a:link:nth-of-type(even),
-  #hub-selection .content-wrapper a:visited:nth-of-type(even) {
-    background: #A0D2DB;
-    border-bottom: 5px solid #A0D2DB; }
-    #hub-selection .content-wrapper a:link:nth-of-type(even):hover,
-    #hub-selection .content-wrapper a:visited:nth-of-type(even):hover {
-      background: none; }
-  #hub-selection .content-wrapper a:link:nth-of-type(odd),
-  #hub-selection .content-wrapper a:visited:nth-of-type(odd) {
-    background: #C490D1;
-    border-bottom: 5px solid #C490D1; }
-    #hub-selection .content-wrapper a:link:nth-of-type(odd):hover,
-    #hub-selection .content-wrapper a:visited:nth-of-type(odd):hover {
-      background: none;
+#hub-selection {
+  text-transform: lowercase; }
+  #hub-selection .content-wrapper a:link,
+  #hub-selection .content-wrapper a:visited {
+    border-radius: 5px;
+    color: #08080D;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px; }
+    #hub-selection .content-wrapper a:link:nth-of-type(even),
+    #hub-selection .content-wrapper a:visited:nth-of-type(even) {
+      background: #A0D2DB;
+      border-bottom: 5px solid #A0D2DB; }
+      #hub-selection .content-wrapper a:link:nth-of-type(even):hover,
+      #hub-selection .content-wrapper a:visited:nth-of-type(even):hover {
+        background: none; }
+    #hub-selection .content-wrapper a:link:nth-of-type(odd),
+    #hub-selection .content-wrapper a:visited:nth-of-type(odd) {
+      background: #C490D1;
       border-bottom: 5px solid #C490D1; }
-  #hub-selection .content-wrapper a:link:hover,
-  #hub-selection .content-wrapper a:visited:hover {
-    color: #fff;
-    transition: .5s background-color !important;
-    transition: .1s color; }
-#hub-selection .content-wrapper h2 {
-  text-align: center;
-  text-transform: lowercase;
-  padding: 10px 0px; }
-  #hub-selection .content-wrapper h2 span {
-    color: #A0D2DB;
-    font-weight: 300; }
-#hub-selection .content-wrapper .hub-link-container {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-#hub-selection .content-wrapper #hub-one {
-  margin: 0 auto; }
-  #hub-selection .content-wrapper #hub-one a:link,
-  #hub-selection .content-wrapper #hub-one a:visited {
-    width: 100px;
-    height: 20px; }
-  #hub-selection .content-wrapper #hub-one #hub-description {
-    opacity: 0;
-    padding-left: 20px; }
-  #hub-selection .content-wrapper #hub-one:hover #hub-description {
-    opacity: 1;
-    transition: 1s opacity; }
+      #hub-selection .content-wrapper a:link:nth-of-type(odd):hover,
+      #hub-selection .content-wrapper a:visited:nth-of-type(odd):hover {
+        background: none;
+        border-bottom: 5px solid #C490D1; }
+    #hub-selection .content-wrapper a:link:hover,
+    #hub-selection .content-wrapper a:visited:hover {
+      color: #fff;
+      transition: .5s background-color !important;
+      transition: .1s color; }
+  #hub-selection .content-wrapper h2 {
+    text-align: center;
+    padding: 10px 0px; }
+    #hub-selection .content-wrapper h2 span {
+      color: #A0D2DB;
+      font-weight: 300; }
+  #hub-selection .content-wrapper .hub-link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  #hub-selection .content-wrapper #hub-one, #hub-selection .content-wrapper #hub-two, #hub-selection .content-wrapper #hub-three {
+    margin: 0 auto; }
+    #hub-selection .content-wrapper #hub-one a:link,
+    #hub-selection .content-wrapper #hub-one a:visited, #hub-selection .content-wrapper #hub-two a:link,
+    #hub-selection .content-wrapper #hub-two a:visited, #hub-selection .content-wrapper #hub-three a:link,
+    #hub-selection .content-wrapper #hub-three a:visited {
+      height: 20px;
+      text-align: center;
+      width: 140px;
+      height: 20px; }
+    #hub-selection .content-wrapper #hub-one #hub-description, #hub-selection .content-wrapper #hub-two #hub-description, #hub-selection .content-wrapper #hub-three #hub-description {
+      font-size: .80rem;
+      line-height: .80rem;
+      padding-bottom: 10px; }
+    #hub-selection .content-wrapper #hub-one .portfolio-link, #hub-selection .content-wrapper #hub-two .portfolio-link, #hub-selection .content-wrapper #hub-three .portfolio-link {
+      background: none;
+      border-bottom: 3px solid #C490D1 !important;
+      color: #fff;
+      display: inline-block;
+      width: 50px !important;
+      height: auto;
+      margin: 0px !important;
+      padding: 0px !important; }
+      #hub-selection .content-wrapper #hub-one .portfolio-link:hover, #hub-selection .content-wrapper #hub-two .portfolio-link:hover, #hub-selection .content-wrapper #hub-three .portfolio-link:hover {
+        color: #A0D2DB;
+        transition: .3s color !important; }
 
 /* blog */
 #main-content {
@@ -212,7 +228,7 @@ header .content-wrapper {
       border-radius: 5px;
       color: #08080D;
       font-size: 1.25rem;
-      line-height: 1.2rem;
+      line-height: 1.5rem;
       padding: 10px;
       text-transform: lowercase; }
       #main-content .blog article.blog-single-post h1:hover {

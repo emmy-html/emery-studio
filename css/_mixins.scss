@@ -66,3 +66,32 @@
       }
   }
 }
+@mixin hub {
+  margin: 0 auto;
+  a:link,
+  a:visited {
+    height: 20px;
+    text-align: center;
+    width: 140px;
+    height: 20px;
+  }
+  #hub-description {
+    font-size: .80rem;
+    line-height: .80rem;
+    padding-bottom: 10px;
+  }
+  .portfolio-link {
+    background: none;
+    border-bottom: 3px solid $light-purple !important;
+    color: #fff;
+    display: inline-block;
+    width: 50px !important;
+    height: auto;
+    margin: 0px !important;
+    padding: 0px !important;
+    &:hover {
+      color: $light-blue;
+      transition: .3s color !important;
+    }
+  }
+}

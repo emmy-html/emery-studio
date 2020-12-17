@@ -160,11 +160,11 @@
   }
   /* hub selection */ 
   #hub-selection {
+    text-transform: lowercase;
       .content-wrapper {
         @include block-links;
           h2 {
               text-align: center;
-              text-transform: lowercase;
               padding: 10px 0px;
               span {
                   color: $light-blue;
@@ -173,26 +173,12 @@
           }
           .hub-link-container {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
           }
-          #hub-one {
-              margin: 0 auto;
-              a:link,
-              a:visited {
-              width: 100px;
-              height: 20px;
-              }
-              #hub-description {
-                  opacity: 0;
-                  padding-left: 20px;
-              }
-              &:hover {
-                  #hub-description {
-                      opacity: 1;
-                      transition: 1s opacity;
-                  }
-              }
+          #hub-one, #hub-two, #hub-three {
+              @include hub;
           }
       }
   }
@@ -227,7 +213,7 @@
                  border-radius: 5px;
                  color: $black;
                  font-size: 1.25rem;
-                 line-height: 1.2rem;
+                 line-height: 1.5rem;
                  padding: 10px;
                  text-transform: lowercase;
                  &:hover {
