@@ -177,6 +177,17 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            &:nth-of-type(even) {
+                a:link,
+                a:visited {
+                    background: $light-blue;
+                    border-bottom: 5px solid $light-blue;
+                    &:hover {
+                        background: none;
+                        transition: .3s background;
+                    }
+                }
+            }
           }
           #hub-one, #hub-two, #hub-three {
               @include hub;
