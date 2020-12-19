@@ -93,9 +93,14 @@ h1, h2, h3, h4, h5, p, ul, li {
 
 a:link,
 a:visited {
-  color: #A30062;
+  color: #fff;
   font-weight: 600;
   text-decoration: none; }
+
+main p a:link,
+main p a:visited {
+  border-bottom: 3px solid #A30062;
+  border-radius: 5px; }
 
 /* header */
 header .content-wrapper {
@@ -133,6 +138,61 @@ header .content-wrapper {
     #hero .hero-logo-span span {
       color: #C490D1; }
 
+/* coming soon page */
+#coming-soon-page .intro-text {
+  height: 600px;
+  margin: 0 auto;
+  width: 50%; }
+  #coming-soon-page .intro-text span {
+    background: #C490D1;
+    color: #08080D;
+    display: inline-block;
+    font-weight: 600;
+    padding: 5px;
+    margin-top: 5px; }
+    #coming-soon-page .intro-text span:nth-of-type(even) {
+      background: #A0D2DB; }
+#coming-soon-page .intro-text h1 {
+  opacity: 0; }
+  #coming-soon-page .intro-text h1:nth-of-type(1) {
+    animation-name: textFade;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; }
+@keyframes textFade {
+  from {
+    color: #08080D;
+    opacity: 0; }
+  to {
+    color: #fff;
+    opacity: 1; } }
+    #coming-soon-page .intro-text h1:nth-of-type(1):after {
+      animation-name: textFade;
+      animation-delay: 0.5s;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+      content: "|";
+      animation-iteration-count: infinite; }
+@keyframes textFade {
+  from {
+    color: #08080D;
+    opacity: 0; }
+  to {
+    color: #fff;
+    opacity: 1; } }
+  #coming-soon-page .intro-text h1:nth-of-type(2) {
+    animation-name: textFade;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s; }
+@keyframes textFade {
+  from {
+    color: #08080D;
+    opacity: 0; }
+  to {
+    color: #fff;
+    opacity: 1; } }
 /* hub selection */
 #hub-selection {
   text-transform: lowercase; }
@@ -588,13 +648,15 @@ footer {
     header .content-wrapper ul li:nth-of-type(even) a:link,
     header .content-wrapper ul li:nth-of-type(even) a:visited {
       background: #A0D2DB !important;
-      border-bottom: 3px solid #A0D2DB; }
+      border-bottom: 5px solid #A0D2DB; }
       header .content-wrapper ul li:nth-of-type(even) a:link:hover,
       header .content-wrapper ul li:nth-of-type(even) a:visited:hover {
         background: none !important;
-        border-bottom: 3px solid #A0D2DB; }
+        border-bottom: 5px solid #A0D2DB; }
 
   /* home page and hub selection */
+  #hub-selection .content-wrapper h2 {
+    font-size: 2.5rem; }
   #hub-selection .content-wrapper .hub-container {
     display: flex;
     flex-direction: row;

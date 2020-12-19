@@ -137,3 +137,33 @@
     }
   }
 }
+@mixin intro-text {
+  .intro-text {
+    height: 600px;
+    margin: 0 auto;
+    width: 50%;
+    span {
+      background: $light-purple;
+      color: $black;
+      display: inline-block;
+      font-weight: $bold;
+      padding: 5px;
+      margin-top: 5px;
+      &:nth-of-type(even) {
+        background: $light-blue;
+      }
+    }
+  }
+}
+@mixin intro-animation($delay, $duration) {
+    animation-name: textFade;
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-fill-mode: forwards;
+  @keyframes textFade {
+    from {color: $black;
+    opacity: 0;}
+    to {color: #fff;
+    opacity: 1;}
+  }
+}
