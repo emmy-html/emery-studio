@@ -142,28 +142,45 @@
     height: 600px;
     margin: 0 auto;
     width: 50%;
-    span {
+    color: $black;
+    span:nth-of-type(6) {
       background: $light-purple;
       color: $black;
       display: inline-block;
       font-weight: $bold;
       padding: 5px;
       margin-top: 5px;
-      &:nth-of-type(even) {
+      &:nth-of-type(7) {
         background: $light-blue;
       }
     }
   }
 }
-@mixin intro-animation($delay, $duration) {
+@mixin intro-animation($delay, $duration, $fill) {
     animation-name: textFade;
     animation-delay: $delay;
     animation-duration: $duration;
-    animation-fill-mode: forwards;
+    animation-fill-mode: $fill;
   @keyframes textFade {
     from {color: $black;
     opacity: 0;}
     to {color: #fff;
     opacity: 1;}
+  }
+}
+@mixin outro-animation {
+  animation-name: bye;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+  font-weight: $light;
+  @keyframes bye {
+    from {
+      color: #fff;
+    }
+    to {
+      color: $black;
+    }
   }
 }

@@ -173,18 +173,23 @@
   #coming-soon-page {
       @include intro-text;
       .intro-text {
-        h1 {
-            opacity: 0;
-            &:nth-of-type(1) {
-                @include intro-animation(0s, 2s);
-                &:after {
-                    @include intro-animation(.5s, 2s);
-                    content: "|";
-                    animation-iteration-count: infinite;
-                }
+        h1:nth-of-type(1) {
+            span:nth-of-type(1) {
+                @include intro-animation(0s, 2s, forwards);
+            }
+            span:nth-of-type(2) {
+                @include intro-animation(.5s, 2s, forwards);
+            }
+            span:nth-of-type(3) {
+                @include intro-animation(1s, 2s, forwards);
+            }
+            &:after {
+                @include outro-animation;
+                content: "|";
+                color: $black;
             }
             &:nth-of-type(2) {
-                @include intro-animation(1s, 2s);
+                @include intro-animation(1s, 2s, forwards);
                 animation-delay: 1s;
             }
         }
