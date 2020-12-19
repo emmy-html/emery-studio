@@ -177,7 +177,7 @@
             span:nth-of-type(1) {
                 @include intro-animation(0s, 2s, forwards);
                 &:after {
-                    @include type-animation(1s, 1.5s, 1);
+                    @include type-animation(.75s, 1.5s, 1);
                 }
             }
             span:nth-of-type(2) {
@@ -189,16 +189,37 @@
             span:nth-of-type(3) {
                 @include intro-animation(2s, 2s, forwards);
                 &:after {
-                    @include type-animation(3s, 1.5s, 3);
+                    @include type-animation(3s, 1.5s, 2);
                 }
-            }
-            &:nth-of-type(2) {
-                @include intro-animation(2.5s, 2s, forwards);
-                animation-delay: 1s;
             }
         }
         h1:nth-of-type(2) {
-
+            span {
+                &:nth-of-type(1) {
+                    @include intro-animation(5s, 2s, forwards);
+                    &:after {
+                        @include type-animation(6s, 1.5s, 1);
+                    }
+                }
+                &:nth-of-type(2) {
+                    @include intro-animation(6s, 2s, forwards);
+                    &:after {
+                        @include type-animation(7s, 1.5s, 1);
+                    }
+                }
+                &:nth-of-type(3) {
+                    @include intro-animation(7s, 2s, forwards);
+                    &:after {
+                        @include type-animation(8s, 1.5s, 1);
+                    }
+                }
+                &:nth-of-type(4) {
+                    @include intro-animation(9s, 2s, forwards);
+                    &:after {
+                        @include type-animation(10s, 1.5s, 3);
+                    }
+                }
+            }
         }
       }
   }

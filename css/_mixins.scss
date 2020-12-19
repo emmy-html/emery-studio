@@ -164,7 +164,8 @@
     letter-spacing: -2px;
   @keyframes textFade {
     from {color: $black;
-    opacity: 0;}
+    opacity: 0;
+  }
     to {color: #fff;
     opacity: 1;}
   }
