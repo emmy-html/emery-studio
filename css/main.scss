@@ -98,6 +98,9 @@
   @import "colors";
   @import "mixins";
   @import "variables";
+  html {
+      scroll-behavior: smooth;
+  }
   body {
       background: $black;
       color: #fff;
@@ -351,6 +354,13 @@
                   .pattern-section-jump {
                       width: 100%;
                       display: flex;
+                      flex-flow: row wrap;
+                      justify-content: space-evenly;
+                      h2 {
+                          color: $light-purple;
+                          font-weight: $light;
+                          text-transform: lowercase;
+                      }
                   }
                   #circuit-diagram {
                       img {
@@ -360,12 +370,14 @@
                       }
                   }
                   #assembly {
-                      display: flex;
-                      flex-direction: row;
-                      img {
-                          width: 50%;
-                          height: 400px;
-                          object-fit: cover;
+                      .assembly-content {
+                          display: flex;
+                          flex-direction: column;
+                          img {
+                            width: 50%;
+                            height: 400px;
+                            object-fit: cover;
+                        }
                       }
                   }
               }
