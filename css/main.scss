@@ -344,6 +344,33 @@
               padding: 10px !important;
           }
       }
+      /* crochet tech hub blog, single post, pattern template */ 
+      .blog.crochet-tech-hub {
+          .content-wrapper {
+              .blog-single-post {
+                  .pattern-section-jump {
+                      width: 100%;
+                      display: flex;
+                  }
+                  #circuit-diagram {
+                      img {
+                          width: 100%;
+                          height: auto;
+                          object-fit: cover
+                      }
+                  }
+                  #assembly {
+                      display: flex;
+                      flex-direction: row;
+                      img {
+                          width: 50%;
+                          height: 400px;
+                          object-fit: cover;
+                      }
+                  }
+              }
+          }
+      }
       /* about page */ 
       .about-page {
           @include page-header;
