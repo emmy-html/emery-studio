@@ -14,14 +14,14 @@ html {
   line-height: 1.4; }
 
 /*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none; }
@@ -31,8 +31,8 @@ html {
   text-shadow: none; }
 
 /*
- * A better looking default horizontal rule
- */
+   * A better looking default horizontal rule
+   */
 hr {
   display: block;
   height: 1px;
@@ -42,10 +42,10 @@ hr {
   padding: 0; }
 
 /*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
 audio,
 canvas,
 iframe,
@@ -55,22 +55,22 @@ video {
   vertical-align: middle; }
 
 /*
- * Remove default fieldset styles.
- */
+   * Remove default fieldset styles.
+   */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0; }
 
 /*
- * Allow only vertical resizing of textareas.
- */
+   * Allow only vertical resizing of textareas.
+   */
 textarea {
   resize: vertical; }
 
 /* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
+     Browser Upgrade Prompt
+     ========================================================================== */
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -86,7 +86,14 @@ body {
   color: #fff;
   font-family: "Barlow", sans-serif; }
 
-h1, h2, h3, h4, h5, p, ul, li {
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+li {
   font-family: "Barlow", sans-serif;
   margin: 0;
   padding: 0; }
@@ -114,7 +121,7 @@ header .content-wrapper {
     color: #A0D2DB; }
     header .content-wrapper i:hover {
       color: #C490D1;
-      transition: .3s color; }
+      transition: 0.3s color; }
   header .content-wrapper ul li {
     list-style-type: none;
     text-transform: lowercase;
@@ -125,7 +132,7 @@ header .content-wrapper {
       header .content-wrapper ul li a:link:hover,
       header .content-wrapper ul li a:visited:hover {
         color: #C490D1;
-        transition: .3s color; }
+        transition: 0.3s color; }
 
 /* hero */
 #hero {
@@ -393,24 +400,32 @@ header .content-wrapper {
       #hub-selection .content-wrapper .hub-link-container:nth-of-type(even) a:link:hover,
       #hub-selection .content-wrapper .hub-link-container:nth-of-type(even) a:visited:hover {
         background: none;
-        transition: .3s background; }
-  #hub-selection .content-wrapper #hub-one, #hub-selection .content-wrapper #hub-two, #hub-selection .content-wrapper #hub-three {
+        transition: 0.3s background; }
+  #hub-selection .content-wrapper #hub-one,
+  #hub-selection .content-wrapper #hub-two,
+  #hub-selection .content-wrapper #hub-three {
     margin: 0 auto; }
     #hub-selection .content-wrapper #hub-one a:link,
-    #hub-selection .content-wrapper #hub-one a:visited, #hub-selection .content-wrapper #hub-two a:link,
-    #hub-selection .content-wrapper #hub-two a:visited, #hub-selection .content-wrapper #hub-three a:link,
+    #hub-selection .content-wrapper #hub-one a:visited,
+    #hub-selection .content-wrapper #hub-two a:link,
+    #hub-selection .content-wrapper #hub-two a:visited,
+    #hub-selection .content-wrapper #hub-three a:link,
     #hub-selection .content-wrapper #hub-three a:visited {
       height: 20px;
       text-align: center;
       width: 140px;
       height: 20px; }
-    #hub-selection .content-wrapper #hub-one #hub-description, #hub-selection .content-wrapper #hub-two #hub-description, #hub-selection .content-wrapper #hub-three #hub-description {
+    #hub-selection .content-wrapper #hub-one #hub-description,
+    #hub-selection .content-wrapper #hub-two #hub-description,
+    #hub-selection .content-wrapper #hub-three #hub-description {
       font-size: 1rem;
       line-height: 1rem;
       padding-bottom: 15px;
       text-align: center;
       width: 250px; }
-    #hub-selection .content-wrapper #hub-one .portfolio-link, #hub-selection .content-wrapper #hub-two .portfolio-link, #hub-selection .content-wrapper #hub-three .portfolio-link {
+    #hub-selection .content-wrapper #hub-one .portfolio-link,
+    #hub-selection .content-wrapper #hub-two .portfolio-link,
+    #hub-selection .content-wrapper #hub-three .portfolio-link {
       background: none;
       border-bottom: 3px solid #C490D1 !important;
       color: #fff;
@@ -419,13 +434,17 @@ header .content-wrapper {
       height: auto;
       margin: 0px !important;
       padding: 0px !important; }
-      #hub-selection .content-wrapper #hub-one .portfolio-link:hover, #hub-selection .content-wrapper #hub-two .portfolio-link:hover, #hub-selection .content-wrapper #hub-three .portfolio-link:hover {
+      #hub-selection .content-wrapper #hub-one .portfolio-link:hover,
+      #hub-selection .content-wrapper #hub-two .portfolio-link:hover,
+      #hub-selection .content-wrapper #hub-three .portfolio-link:hover {
         color: #A0D2DB;
         transition: .3s color !important; }
     @media screen and (min-width: 768px) {
       #hub-selection .content-wrapper #hub-one a:link,
-      #hub-selection .content-wrapper #hub-one a:visited, #hub-selection .content-wrapper #hub-two a:link,
-      #hub-selection .content-wrapper #hub-two a:visited, #hub-selection .content-wrapper #hub-three a:link,
+      #hub-selection .content-wrapper #hub-one a:visited,
+      #hub-selection .content-wrapper #hub-two a:link,
+      #hub-selection .content-wrapper #hub-two a:visited,
+      #hub-selection .content-wrapper #hub-three a:link,
       #hub-selection .content-wrapper #hub-three a:visited {
         font-size: 2.5rem;
         display: flex;
@@ -434,20 +453,28 @@ header .content-wrapper {
         width: 350px;
         height: 100px;
         margin-top: 20px; }
-      #hub-selection .content-wrapper #hub-one #hub-description, #hub-selection .content-wrapper #hub-two #hub-description, #hub-selection .content-wrapper #hub-three #hub-description {
+      #hub-selection .content-wrapper #hub-one #hub-description,
+      #hub-selection .content-wrapper #hub-two #hub-description,
+      #hub-selection .content-wrapper #hub-three #hub-description {
         font-size: 1.5rem;
         line-height: 1.5rem;
         opacity: 0;
         padding: 20px 0px;
         width: 330px; }
-      #hub-selection .content-wrapper #hub-one:hover #hub-description, #hub-selection .content-wrapper #hub-two:hover #hub-description, #hub-selection .content-wrapper #hub-three:hover #hub-description {
+      #hub-selection .content-wrapper #hub-one:hover #hub-description,
+      #hub-selection .content-wrapper #hub-two:hover #hub-description,
+      #hub-selection .content-wrapper #hub-three:hover #hub-description {
         font-size: 1.5rem;
         line-height: 1.5rem;
         opacity: 1;
         transition: .3s opacity; }
-      #hub-selection .content-wrapper #hub-one:not(:hover) #hub-description, #hub-selection .content-wrapper #hub-two:not(:hover) #hub-description, #hub-selection .content-wrapper #hub-three:not(:hover) #hub-description {
+      #hub-selection .content-wrapper #hub-one:not(:hover) #hub-description,
+      #hub-selection .content-wrapper #hub-two:not(:hover) #hub-description,
+      #hub-selection .content-wrapper #hub-three:not(:hover) #hub-description {
         transition: .3s opacity; }
-      #hub-selection .content-wrapper #hub-one .portfolio-link, #hub-selection .content-wrapper #hub-two .portfolio-link, #hub-selection .content-wrapper #hub-three .portfolio-link {
+      #hub-selection .content-wrapper #hub-one .portfolio-link,
+      #hub-selection .content-wrapper #hub-two .portfolio-link,
+      #hub-selection .content-wrapper #hub-three .portfolio-link {
         display: inline-block !important;
         font-size: 1.5rem !important;
         line-height: 1.5rem !important;
@@ -491,10 +518,10 @@ header .content-wrapper {
         background: none;
         color: #fff;
         cursor: pointer;
-        transition: .3s background-color; }
+        transition: 0.3s background-color; }
     #main-content .blog article.blog-single-post h3.blog-post-metadata {
       color: #A0D2DB;
-      font-size: .75rem;
+      font-size: 0.75rem;
       font-weight: 600;
       padding: 5px;
       text-transform: uppercase; }
@@ -513,7 +540,7 @@ header .content-wrapper {
       object-fit: cover;
       margin: 0 auto; }
     #main-content .blog article.blog-single-post .photo-credit {
-      font-size: .65rem;
+      font-size: 0.65rem;
       font-weight: 300i;
       padding: 5px 0px;
       margin-bottom: 0px;
@@ -529,14 +556,37 @@ header .content-wrapper {
     margin: 0 auto;
     padding: 10px !important; }
   #main-content .blog.crochet-tech-hub .content-wrapper .blog-single-post .pattern-section-jump {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly; }
+    background: rgba(8, 8, 13, 0.45);
+    display: inline-flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding-bottom: 10px;
+    width: 100%; }
     #main-content .blog.crochet-tech-hub .content-wrapper .blog-single-post .pattern-section-jump h2 {
       color: #C490D1;
-      font-weight: 300;
+      padding-bottom: 5px;
       text-transform: lowercase; }
+    #main-content .blog.crochet-tech-hub .content-wrapper .blog-single-post .pattern-section-jump .pattern-section-jump-buttons {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      width: 100%; }
+      #main-content .blog.crochet-tech-hub .content-wrapper .blog-single-post .pattern-section-jump .pattern-section-jump-buttons button {
+        background: none;
+        margin-left: 10px;
+        margin-top: 5px; }
+        #main-content .blog.crochet-tech-hub .content-wrapper .blog-single-post .pattern-section-jump .pattern-section-jump-buttons button:nth-child(even) {
+          background: #A0D2DB;
+          border: 2px solid #A0D2DB; }
+        #main-content .blog.crochet-tech-hub .content-wrapper .blog-single-post .pattern-section-jump .pattern-section-jump-buttons button:nth-child(odd) {
+          background: #C490D1;
+          border: 2px solid #C490D1; }
+      #main-content .blog.crochet-tech-hub .content-wrapper .blog-single-post .pattern-section-jump .pattern-section-jump-buttons a:link,
+      #main-content .blog.crochet-tech-hub .content-wrapper .blog-single-post .pattern-section-jump .pattern-section-jump-buttons a:visited {
+        color: #08080D; }
+  #main-content .blog.crochet-tech-hub .content-wrapper .blog-single-post .pattern-section-jump.sticky {
+    position: sticky;
+    top: 0; }
   #main-content .blog.crochet-tech-hub .content-wrapper .blog-single-post #circuit-diagram img {
     width: 100%;
     height: auto;
@@ -570,7 +620,8 @@ header .content-wrapper {
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-    #main-content .about-page .about-page-content h2, #main-content .about-page .about-page-content p {
+    #main-content .about-page .about-page-content h2,
+    #main-content .about-page .about-page-content p {
       padding: 10px 0px; }
     #main-content .about-page .about-page-content h2 {
       padding-bottom: 10px;
@@ -640,7 +691,7 @@ header .content-wrapper {
           #main-content aside.sidebar .content-wrapper .sidebar-about h1.sidebar-logo-span span a:link:hover,
           #main-content aside.sidebar .content-wrapper .sidebar-about h1.sidebar-logo-span span a:visited:hover {
             color: #fff;
-            transition: .3s color; }
+            transition: 0.3s color; }
         #main-content aside.sidebar .content-wrapper .sidebar-about h1.sidebar-logo-span span:last-of-type {
           padding-bottom: 10px; }
   #main-content aside.sidebar .content-wrapper .sidebar-browse-topic {
@@ -681,7 +732,7 @@ header .content-wrapper {
       padding-left: 5px; }
       #main-content aside.sidebar .content-wrapper .sidebar-social-media i:hover {
         color: #A0D2DB;
-        transition: .3s color; }
+        transition: 0.3s color; }
   #main-content aside.sidebar .content-wrapper .sidebar-latest-posts a:link,
   #main-content aside.sidebar .content-wrapper .sidebar-latest-posts a:visited {
     border-radius: 5px;
@@ -756,7 +807,7 @@ header .content-wrapper {
         background: none;
         border-bottom: 3px solid #A0D2DB;
         color: #fff;
-        transition: .3s background-color; }
+        transition: 0.3s background-color; }
 
 footer {
   padding: 20px 0px; }
@@ -785,7 +836,7 @@ footer {
         padding-left: 5px; }
         footer .content-wrapper .footer-social-media i:hover {
           color: #A0D2DB;
-          transition: .3s color; }
+          transition: 0.3s color; }
 
 /* large screens */
 @media screen and (min-width: 768px) {
@@ -893,22 +944,22 @@ footer {
     footer .content-wrapper .footer-logo-span {
       background-position: center !important; } }
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
+     Helper classes
+     ========================================================================== */
 /*
- * Hide visually and from screen readers
- */
+   * Hide visually and from screen readers
+   */
 .hidden {
   display: none !important; }
 
 /*
-* Hide only visually, but have it available for screen readers:
-* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-*
-* 1. For long content, line feeds are not interpreted as spaces and small width
-*    causes content to wrap 1 word per line:
-*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-*/
+  * Hide only visually, but have it available for screen readers:
+  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+  *
+  * 1. For long content, line feeds are not interpreted as spaces and small width
+  *    causes content to wrap 1 word per line:
+  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+  */
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -922,10 +973,10 @@ footer {
   /* 1 */ }
 
 /*
-* Extends the .sr-only class to allow the element
-* to be focusable when navigated to via the keyboard:
-* https://www.drupal.org/node/897638
-*/
+  * Extends the .sr-only class to allow the element
+  * to be focusable when navigated to via the keyboard:
+  * https://www.drupal.org/node/897638
+  */
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
   clip: auto;
@@ -937,22 +988,22 @@ footer {
   width: auto; }
 
 /*
-* Hide visually and from screen readers, but maintain layout
-*/
+  * Hide visually and from screen readers, but maintain layout
+  */
 .invisible {
   visibility: hidden; }
 
 /*
-* Clearfix: contain floats
-*
-* For modern browsers
-* 1. The space content is one way to avoid an Opera bug when the
-*    `contenteditable` attribute is included anywhere else in the document.
-*    Otherwise it causes space to appear at the top and bottom of elements
-*    that receive the `clearfix` class.
-* 2. The use of `table` rather than `block` is only necessary if using
-*    `:before` to contain the top-margins of child elements.
-*/
+  * Clearfix: contain floats
+  *
+  * For modern browsers
+  * 1. The space content is one way to avoid an Opera bug when the
+  *    `contenteditable` attribute is included anywhere else in the document.
+  *    Otherwise it causes space to appear at the top and bottom of elements
+  *    that receive the `clearfix` class.
+  * 2. The use of `table` rather than `block` is only necessary if using
+  *    `:before` to contain the top-margins of child elements.
+  */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -964,19 +1015,19 @@ footer {
   clear: both; }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */ }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
 /* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
 @media print {
   *,
   *:before,
@@ -998,9 +1049,9 @@ footer {
     content: " (" attr(title) ")"; }
 
   /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
+       * Don't show links that are fragment identifiers,
+       * or use the `javascript:` pseudo protocol
+       */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: ""; }
@@ -1014,9 +1065,9 @@ footer {
     page-break-inside: avoid; }
 
   /*
-     * Printing Tables:
-     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
+       * Printing Tables:
+       * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+       */
   thead {
     display: table-header-group; }
 
