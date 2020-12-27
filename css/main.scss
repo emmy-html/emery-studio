@@ -232,6 +232,32 @@ header {
           @include type-animation(13s, 1.5s, 1);
         }
       }
+      span:nth-of-type(2) {
+        @include intro-animation(14s, 2s, forwards);
+        &:after {
+          @include type-animation(15s, 1.5s, 1);
+        }
+      }
+      span:nth-of-type(3) {
+        @include intro-animation(16s, 2s, forwards);
+        &:after {
+          @include type-animation(17s, 1.5s, 1);
+        }
+      }
+      span:nth-of-type(4) {
+        @include intro-animation(18s, 2s, forwards);
+        &:after {
+          @include type-animation(19s, 1.5s, 2);
+        }
+      }
+    }
+    h1:nth-of-type(5) {
+      span:nth-of-type(1) {
+        @include intro-animation(21s, 2s, forwards);
+        &:after {
+          @include type-animation(22s, 1.5s, forever);
+        }
+      }
     }
   }
 }
