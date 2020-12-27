@@ -161,7 +161,6 @@
     animation-delay: $delay;
     animation-duration: $duration;
     animation-fill-mode: $fill;
-    letter-spacing: -2px;
   @keyframes textFade {
     from {color: $black;
     opacity: 0;

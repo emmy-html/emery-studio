@@ -187,48 +187,27 @@ header {
       span:nth-of-type(1) {
         @include intro-animation(0s, 2s, forwards);
         &:after {
-          @include type-animation(0.75s, 1.5s, 1);
-        }
-      }
-      span:nth-of-type(2) {
-        @include intro-animation(1s, 2s, forwards);
-        &:after {
-          @include type-animation(2s, 1.5s, 1);
-        }
-      }
-      span:nth-of-type(3) {
-        @include intro-animation(2s, 2s, forwards);
-        &:after {
-          @include type-animation(3s, 1.5s, 2);
+          @include type-animation(0.75s, 1s, 2);
         }
       }
     }
     h1:nth-of-type(2) {
-      span {
-        &:nth-of-type(1) {
-          @include intro-animation(5s, 2s, forwards);
-          &:after {
-            @include type-animation(6s, 1.5s, 1);
-          }
+      span:nth-of-type(1) {
+        @include intro-animation(3s, 2s, forwards);
+        &:after {
+          @include type-animation(4s, 1.5s, 1);
         }
-        &:nth-of-type(2) {
-          @include intro-animation(6s, 2s, forwards);
-          &:after {
-            @include type-animation(7s, 1.5s, 1);
-          }
+      }
+      span:nth-of-type(2) {
+        @include intro-animation(4.5s, 2s, forwards);
+        &:after {
+          @include type-animation(5s, 1.5s, 2);
         }
-        &:nth-of-type(3) {
-          @include intro-animation(7s, 2s, forwards);
-          &:after {
-            @include type-animation(8s, 1.5s, 1);
-          }
-        }
-        &:nth-of-type(4) {
-          @include intro-animation(9s, 2s, forwards);
-          &:after {
-            @include type-animation(10s, 1.5s, 3);
-          }
-        }
+      }
+    }
+    h1:nth-of-type(3) {
+      span:nth-of-type(1) {
+        
       }
     }
   }
@@ -360,23 +339,28 @@ header {
   .blog.crochet-tech-hub {
     .content-wrapper {
       .blog-single-post {
+        div {
+            h2 {
+                padding-top: 30px;
+            }
+        }
         .pattern-section-jump {
           background: $semi-transparent-black;
           display: inline-flex;
           flex-flow: column wrap;
           align-items: center;
-          padding-bottom: 10px;
+          padding-bottom: 5px;
           width: 100%;
-          h2 {
-            color: $light-purple;
-            padding-bottom: 5px;
-            text-transform: lowercase;
-          }
           .pattern-section-jump-buttons {
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
             width: 100%;
+            h3 {
+                color: $light-purple;
+                text-transform: lowercase;
+                padding-top: 3px;
+              }
             button {
               background: none;
               margin-left: 10px;
