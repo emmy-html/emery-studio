@@ -150,8 +150,8 @@ header .content-wrapper {
 
 /* coming soon page */
 #coming-soon-page .intro-text {
-  height: 600px;
   margin: 0 auto;
+  padding: 20px 0px;
   width: 50%;
   color: #08080D; }
   #coming-soon-page .intro-text span:nth-of-type(6) {
@@ -439,7 +439,7 @@ header .content-wrapper {
     animation-name: typeSymbol;
     animation-delay: 22s;
     animation-duration: 1.5s;
-    animation-iteration-count: forever;
+    animation-iteration-count: infinite;
     animation-fill-mode: forwards;
     content: "|";
     color: #08080D;

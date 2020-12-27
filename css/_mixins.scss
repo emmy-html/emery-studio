@@ -139,8 +139,8 @@
 }
 @mixin intro-text {
   .intro-text {
-    height: 600px;
     margin: 0 auto;
+    padding: 20px 0px;
     width: 50%;
     color: $black;
     span:nth-of-type(6) {
