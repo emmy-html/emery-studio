@@ -65,6 +65,16 @@
           transition: .1s color;
       }
   }
+  li:nth-of-type(odd) {
+    a:link,
+    a:visited {
+      background: $light-blue;
+      border-bottom: 5px solid $light-blue;
+      &:hover {
+        border-bottom: 5px solid $light-blue;
+      }
+    }
+  }
 }
 @mixin hub {
   margin: 0 auto;
@@ -143,17 +153,6 @@
     padding: 20px 0px;
     width: 50%;
     color: $black;
-    span:nth-of-type(6) {
-      background: $light-purple;
-      color: $black;
-      display: inline-block;
-      font-weight: $bold;
-      padding: 5px;
-      margin-top: 5px;
-      &:nth-of-type(7) {
-        background: $light-blue;
-      }
-    }
   }
 }
 @mixin intro-animation($delay, $duration, $fill) {
@@ -162,11 +161,14 @@
     animation-duration: $duration;
     animation-fill-mode: $fill;
   @keyframes textFade {
-    from {color: $black;
-    opacity: 0;
-  }
-    to {color: #fff;
-    opacity: 1;}
+      from {
+      color: $black;
+      opacity: 0;
+    }
+      to {
+      color: #fff;
+      opacity: 1;
+    }
   }
 }
 @mixin type-animation($delay, $duration, $iteration) {

@@ -136,7 +136,8 @@ header .content-wrapper {
 
 /* hero */
 #hero {
-  padding: 20px 0px; }
+  padding: 20px 0px;
+  /* project spotlight section */ }
   #hero .hero-logo-span {
     padding-bottom: 10px;
     background: linear-gradient(to right, #a0d2db 0%, #c490d1 50%, #b8336a 100%) left bottom #08080D no-repeat;
@@ -147,6 +148,72 @@ header .content-wrapper {
     text-align: center; }
     #hero .hero-logo-span span {
       color: #C490D1; }
+  #hero .project-spotlight aside {
+    padding: 5px 0px;
+    text-align: center; }
+    #hero .project-spotlight aside h2 {
+      color: #A0D2DB;
+      padding: 5px 0px;
+      text-transform: lowercase; }
+    #hero .project-spotlight aside h3 {
+      color: #C490D1;
+      font-weight: 300;
+      text-transform: lowercase;
+      padding-bottom: 5px; }
+    #hero .project-spotlight aside ul {
+      list-style-type: none;
+      padding: 0px 10px; }
+      #hero .project-spotlight aside ul a:link,
+      #hero .project-spotlight aside ul a:visited {
+        border-radius: 5px;
+        color: #08080D;
+        display: block;
+        margin-bottom: 10px;
+        padding: 10px; }
+        #hero .project-spotlight aside ul a:link:nth-of-type(even),
+        #hero .project-spotlight aside ul a:visited:nth-of-type(even) {
+          background: #A0D2DB;
+          border-bottom: 5px solid #A0D2DB; }
+          #hero .project-spotlight aside ul a:link:nth-of-type(even):hover,
+          #hero .project-spotlight aside ul a:visited:nth-of-type(even):hover {
+            background: none; }
+        #hero .project-spotlight aside ul a:link:nth-of-type(odd),
+        #hero .project-spotlight aside ul a:visited:nth-of-type(odd) {
+          background: #C490D1;
+          border-bottom: 5px solid #C490D1; }
+          #hero .project-spotlight aside ul a:link:nth-of-type(odd):hover,
+          #hero .project-spotlight aside ul a:visited:nth-of-type(odd):hover {
+            background: none;
+            border-bottom: 5px solid #C490D1; }
+        #hero .project-spotlight aside ul a:link:hover,
+        #hero .project-spotlight aside ul a:visited:hover {
+          color: #fff;
+          transition: .5s background-color !important;
+          transition: .1s color; }
+      #hero .project-spotlight aside ul li:nth-of-type(odd) a:link,
+      #hero .project-spotlight aside ul li:nth-of-type(odd) a:visited {
+        background: #A0D2DB;
+        border-bottom: 5px solid #A0D2DB; }
+        #hero .project-spotlight aside ul li:nth-of-type(odd) a:link:hover,
+        #hero .project-spotlight aside ul li:nth-of-type(odd) a:visited:hover {
+          border-bottom: 5px solid #A0D2DB; }
+      #hero .project-spotlight aside ul li span {
+        display: block;
+        margin-bottom: 10px; }
+    #hero .project-spotlight aside img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      padding: 10px 0px; }
+    #hero .project-spotlight aside .view-more,
+    #hero .project-spotlight aside a:link,
+    #hero .project-spotlight aside a:visited {
+      border-bottom: 3px solid #C490D1; }
+      #hero .project-spotlight aside .view-more:hover,
+      #hero .project-spotlight aside a:link:hover,
+      #hero .project-spotlight aside a:visited:hover {
+        color: #A0D2DB;
+        transition: .3s color; }
 
 /* coming soon page */
 #coming-soon-page .intro-text {
@@ -154,15 +221,6 @@ header .content-wrapper {
   padding: 20px 0px;
   width: 50%;
   color: #08080D; }
-  #coming-soon-page .intro-text span:nth-of-type(6) {
-    background: #C490D1;
-    color: #08080D;
-    display: inline-block;
-    font-weight: 600;
-    padding: 5px;
-    margin-top: 5px; }
-    #coming-soon-page .intro-text span:nth-of-type(6):nth-of-type(7) {
-      background: #A0D2DB; }
 #coming-soon-page .intro-text h1:nth-of-type(1) span:nth-of-type(1) {
   animation-name: textFade;
   animation-delay: 0s;
@@ -215,7 +273,7 @@ header .content-wrapper {
     color: #fff; }
   to {
     color: #08080D; } }
-#coming-soon-page .intro-text h1:nth-of-type(2) span:nth-of-type(2) {
+#coming-soon-page .intro-text h1:nth-of-type(2) custom-span:nth-of-type(1) {
   animation-name: textFade;
   animation-delay: 4.5s;
   animation-duration: 2s;
@@ -227,7 +285,7 @@ header .content-wrapper {
   to {
     color: #fff;
     opacity: 1; } }
-  #coming-soon-page .intro-text h1:nth-of-type(2) span:nth-of-type(2):after {
+  #coming-soon-page .intro-text h1:nth-of-type(2) custom-span:nth-of-type(1):after {
     animation-name: typeSymbol;
     animation-delay: 5s;
     animation-duration: 1.5s;
@@ -479,6 +537,13 @@ header .content-wrapper {
       color: #fff;
       transition: .5s background-color !important;
       transition: .1s color; }
+  #hub-selection .content-wrapper li:nth-of-type(odd) a:link,
+  #hub-selection .content-wrapper li:nth-of-type(odd) a:visited {
+    background: #A0D2DB;
+    border-bottom: 5px solid #A0D2DB; }
+    #hub-selection .content-wrapper li:nth-of-type(odd) a:link:hover,
+    #hub-selection .content-wrapper li:nth-of-type(odd) a:visited:hover {
+      border-bottom: 5px solid #A0D2DB; }
   #hub-selection .content-wrapper h2 {
     text-align: center;
     padding: 10px 0px; }
@@ -823,6 +888,13 @@ header .content-wrapper {
         color: #fff;
         transition: .5s background-color !important;
         transition: .1s color; }
+    #main-content aside.sidebar .content-wrapper .sidebar-browse-topic li:nth-of-type(odd) a:link,
+    #main-content aside.sidebar .content-wrapper .sidebar-browse-topic li:nth-of-type(odd) a:visited {
+      background: #A0D2DB;
+      border-bottom: 5px solid #A0D2DB; }
+      #main-content aside.sidebar .content-wrapper .sidebar-browse-topic li:nth-of-type(odd) a:link:hover,
+      #main-content aside.sidebar .content-wrapper .sidebar-browse-topic li:nth-of-type(odd) a:visited:hover {
+        border-bottom: 5px solid #A0D2DB; }
   #main-content aside.sidebar .content-wrapper .sidebar-social-media {
     padding-top: 10px;
     text-align: center; }
@@ -859,6 +931,13 @@ header .content-wrapper {
       color: #fff;
       transition: .5s background-color !important;
       transition: .1s color; }
+  #main-content aside.sidebar .content-wrapper .sidebar-latest-posts li:nth-of-type(odd) a:link,
+  #main-content aside.sidebar .content-wrapper .sidebar-latest-posts li:nth-of-type(odd) a:visited {
+    background: #A0D2DB;
+    border-bottom: 5px solid #A0D2DB; }
+    #main-content aside.sidebar .content-wrapper .sidebar-latest-posts li:nth-of-type(odd) a:link:hover,
+    #main-content aside.sidebar .content-wrapper .sidebar-latest-posts li:nth-of-type(odd) a:visited:hover {
+      border-bottom: 5px solid #A0D2DB; }
   #main-content aside.sidebar .content-wrapper .sidebar-search form,
   #main-content aside.sidebar .content-wrapper .sidebar-newsletter form {
     display: flex;
@@ -968,6 +1047,13 @@ footer {
         color: #fff;
         transition: .5s background-color !important;
         transition: .1s color; }
+    header .content-wrapper ul li li:nth-of-type(odd) a:link,
+    header .content-wrapper ul li li:nth-of-type(odd) a:visited {
+      background: #A0D2DB;
+      border-bottom: 5px solid #A0D2DB; }
+      header .content-wrapper ul li li:nth-of-type(odd) a:link:hover,
+      header .content-wrapper ul li li:nth-of-type(odd) a:visited:hover {
+        border-bottom: 5px solid #A0D2DB; }
     header .content-wrapper ul li:nth-of-type(even) a:link,
     header .content-wrapper ul li:nth-of-type(even) a:visited {
       background: #A0D2DB !important;
@@ -990,11 +1076,40 @@ footer {
     margin: 0 auto; }
 
   main #hero {
-    padding: 30px 0px; }
+    padding: 30px 0px;
+    /* project spotlight section */ }
     main #hero h1.hero-logo-span {
       font-size: 3rem;
       line-height: 4rem; }
-
+    main #hero .project-spotlight {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 10px; }
+      main #hero .project-spotlight aside:nth-of-type(1) {
+        width: 70%; }
+        main #hero .project-spotlight aside:nth-of-type(1) ul {
+          display: flex;
+          justify-content: space-around;
+          align-items: flex-start;
+          padding-top: 10px; }
+          main #hero .project-spotlight aside:nth-of-type(1) ul li {
+            width: 25%; }
+      main #hero .project-spotlight aside:nth-of-type(2) {
+        width: 20%; }
+        main #hero .project-spotlight aside:nth-of-type(2) img {
+          height: 150px; }
+      main #hero .project-spotlight span {
+        opacity: 0; }
+      main #hero .project-spotlight li:hover span {
+        animation: fadeIn 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards !important;
+        animation-direction: forwards !important; }
+  @keyframes fadeIn {
+    from {
+      opacity: 0; }
+    to {
+      opacity: 1; } }
   #main-content {
     display: flex;
     flex-direction: row;

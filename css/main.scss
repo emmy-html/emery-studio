@@ -178,6 +178,50 @@ header {
       color: $light-purple;
     }
   }
+  /* project spotlight section */ 
+  .project-spotlight {
+    aside {
+      padding: 5px 0px;
+      text-align: center;
+      h2 {
+        color: $light-blue;
+        padding: 5px 0px;
+        text-transform: lowercase;
+      }
+      h3 {
+        color: $light-purple;
+        font-weight: $light;
+        text-transform: lowercase;
+        padding-bottom: 5px;
+      }
+      ul {
+        @include block-links;
+        list-style-type: none;
+        padding: 0px 10px;
+        li {
+          span {
+            display: block;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        padding: 10px 0px;
+      }
+      .view-more,
+      a:link,
+      a:visited {
+        border-bottom: 3px solid $light-purple;
+        &:hover {
+          color: $light-blue;
+          transition: .3s color;
+        }
+      }
+    }
+  }
 }
 /* coming soon page */
 #coming-soon-page {
@@ -198,7 +242,7 @@ header {
           @include type-animation(4s, 1.5s, 1);
         }
       }
-      span:nth-of-type(2) {
+      custom-span:nth-of-type(1) {
         @include intro-animation(4.5s, 2s, forwards);
         &:after {
           @include type-animation(5s, 1.5s, 1);
@@ -719,6 +763,49 @@ footer {
       h1.hero-logo-span {
         font-size: 3rem;
         line-height: 4rem;
+      }
+      /* project spotlight section */ 
+      .project-spotlight {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 10px;
+        aside:nth-of-type(1) {
+          width: 70%;
+          ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding-top: 10px;
+            li {
+              width: 25%;
+            }
+          }
+        }
+        aside:nth-of-type(2) {
+          img {
+            height: 150px;
+          }
+          width: 20%;
+        }
+        span {
+          opacity: 0;
+        }
+        li:hover { 
+          span {
+            animation: fadeIn 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards !important;
+            animation-direction: forwards !important;
+            @keyframes fadeIn {
+              from {
+                opacity: 0;
+              }
+              to {
+                opacity: 1;
+              }
+            }
+          }
+        }
       }
     }
   }
